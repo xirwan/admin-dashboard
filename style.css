@@ -1,0 +1,209 @@
+:root {
+    font-size: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-create a {
+    background-color: blue;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+hr.grey {
+      border-top: 1px solid grey;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.header {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.search-bar, .profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 15px;
+}
+
+.profile {
+    padding: 15px 30px;
+}
+
+.search-bar svg{
+    height: 5vh;
+    width: 5vw;
+}
+
+.profile svg{
+    height: 5vh;
+    width: 5vw;
+}
+
+.bar {
+    background-color: lightgray;
+    border-radius: 10px;
+    width: 50vw;
+    height: 25px;
+}
+
+.sidebar {
+    background-color: dodgerblue;
+    color: white;
+    display: grid;
+    grid-template-rows: 60px 300px 180px;
+    grid-row: 1/4;
+    gap: 25px;
+}
+
+.sidebar svg {
+    height: 5vh;
+    width: 5vw;
+}
+
+.branding {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 10px;
+    align-items: center;
+}
+
+.introduction {
+    display: grid;
+    grid-template-columns: auto 4fr;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.introduction svg {
+    height: 8vh;
+    width: 8vw;   
+}
+
+.menu-create {
+    justify-self: end;
+    align-self: center;
+    padding: 15px 30px;
+}
+
+.menu {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    padding: 10px;
+}
+
+.menu > div > a, .menu-setting > div > a {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+
+.menu-setting {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 10px;
+}
+
+.project h2, .announcements h2{
+    padding: 0px 0px 10px;
+}
+
+.trending h2 {
+    padding: 10px 0px;
+}
+
+.content {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    display: grid;
+    padding: 20px;
+    height: 200px;
+    background: linear-gradient(to right, orange 0%, orange 2%, white 2%, white 100%);
+    border-radius: 10px;
+}
+
+.card > div > p + p{
+    color: gray;
+}
+
+.action {
+    align-self: end;
+    justify-self: end;
+}
+
+.action svg {
+    height: 5vh;
+    width: 5vw;
+}
+
+.side-content {
+    display: grid;
+}
+
+.card-announcements {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 0.85rem;
+}
+
+.card-announcements > p + p {
+    color: gray;
+}
+
+.trending {
+    align-self: end;
+}
+
+.card-trending {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    gap: 15px;
+}
+
+.card-trending > div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-trending > div > div > p + p {
+    color: gray;
+}
+
+.card-trending svg{
+    height: 7vh;
+    width: 7vw;
+}
